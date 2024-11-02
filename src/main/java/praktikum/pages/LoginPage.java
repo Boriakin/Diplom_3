@@ -9,7 +9,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.junit.Assert.assertEquals;
-import static praktikum.constants.Urls.BASE_URL;
 import static praktikum.constants.Urls.LOGIN_URL;
 
 public class LoginPage {

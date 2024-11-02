@@ -22,7 +22,7 @@ public class ProfilePage {
     private final Header header = new Header();
 
     @Step("Нажатие на кнопку выхода.")
-    public LoginPage  clickLogoutButton() {
+    public LoginPage clickLogoutButton() {
         logoutButton.click();
         return page(LoginPage.class);
     }

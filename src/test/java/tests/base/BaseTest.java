@@ -1,10 +1,8 @@
 package tests.base;
 
-import com.codeborne.selenide.Configuration;
 import org.junit.After;
 import org.junit.BeforeClass;
 import praktikum.api.apis.UserApi;
-import browser.Browser;
 import browser.BrowserFactory;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
@@ -22,8 +20,7 @@ public class BaseTest {
 
     @BeforeClass
     public static void setUp() {
-        BrowserFactory.setBrowser(Browser.CHROME);
-        Configuration.browserSize = "1920x1080";
+        BrowserFactory.createWebDriver();
     }
 
     @After

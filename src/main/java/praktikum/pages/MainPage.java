@@ -11,7 +11,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static praktikum.constants.Urls.BASE_URL;
 
 public class MainPage {
@@ -77,17 +76,17 @@ public class MainPage {
 
     @Step("Проверка, что элемент вкладки 'Булки' находится в видимой области окна браузера.")
     public void checkBunElement() {
-                bunsConstructorElement.shouldBe(appear);
+        bunsConstructorElement.shouldBe(appear);
     }
 
     @Step("Проверка, что элемент вкладки 'Соусы' находится в видимой области окна браузера.")
     public void checkSauceElement() {
-                sauceConstructorElement.shouldBe(appear);
+        sauceConstructorElement.shouldBe(appear);
     }
 
     @Step("Проверка, что элемент вкладки 'Начинки' находится в видимой области окна браузера.")
     public void checkFilingElement() {
-                fillingsConstructorElement.shouldBe(appear);
+        fillingsConstructorElement.shouldBe(appear);
     }
 
     @Step("Проверка видимоcти контейнера конструктора и соответсвия URL.")
